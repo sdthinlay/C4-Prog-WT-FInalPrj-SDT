@@ -3,22 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/site.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-<header class="sticky top-0 flex flex-col justify-between p-6 mx-auto md:flex-row gap-2 bg-pink-300 text-gray-800">
-    <div>
-        <h1>Hello, I am Sangay Thinley</h1>
+<header class="sticky top-0 flex justify-between p-6 mx-auto md:flex-row gap-4 bg-froly text-gray-200">
+    <a class="flex items-center mb-4 font-medium title-font md:mb-0 gap-2">
+        <h1 class="text-sm">My Portfolio </h1>
+    </a>
+    <div class="md:hidden fixed top-6 right-6 z-50">
+        <button id="menu-toggle" class="text-gray-200 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
     </div>
-    <nav>
-        <ul>
+    <nav class="md:flex hidden">
+        <ul class="flex flex-col md:flex-row md:items-center md:space-x-4 text-base md:ml-auto">
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="resume.html">Resume Page</a></li>
-            <li><a href="projects.html">Projects Page</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="mywork.html">Sample Projects</a></li>
-            <li><a href="contact.html">Contact page</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
+<main>
+    <div class="w-full md:w-3/4 border border-gray-500 flex flex-col gap-4 p-4">
+        <div class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
+            <h4 class="text-bold text-xl">Hello, I am Sangay Thinley</h4>
+        </div>
+        <div class="-m-4 mb-2 max-h-full overflow-scroll md:max-h-full">
+            <img src="./assets/img/North-Metropolitan-TAFE.jpg" alt="pic of bts"
+                 class="">
+        </div>
+        <div class="flex flex-col gap-4">
+            <p>Certificate IV in IT(Programming)</p>
+            <p>Python, C#, SQL, Web Technology  When a step includes a question, you must attempt to answer it.
+                There is a minimum and maximum number of words to use for each answer.
+                Any step that requires answers to be provided will have a space in this document immediately after each step. The answer space will expand with the content you type or images you paste.
+                Resize images to fit the space provided, ensuring they are still legible.
+                Do not include a whole screenshot, just the required details.
+                If a step has more than one question, these maxima and minima are a total for all the questions in that specific step.
+                All answers must be in complete sentences unless indicated.When a step includes a question, you must attempt to answer it.
+                There is a minimum and maximum number of words to use for each answer.
+                Any step that requires answers to be provided will have a space in this document immediately after each step. The answer space will expand with the content you type or images you paste.
+                Resize images to fit the space provided, ensuring they are still legible.
+                Do not include a whole screenshot, just the required details.
+                If a step has more than one question, these maxima and minima are a total for all the questions in that specific step.
+                All answers must be in complete sentences unless indicated.When a step includes a question, you must attempt to answer it.
+                There is a minimum and maximum number of words to use for each answer.
+                Any step that requires answers to be provided will have a space in this document immediately after each step. The answer space will expand with the content you type or images you paste.
+                Resize images to fit the space provided, ensuring they are still legible.
+                Do not include a whole screenshot, just the required details.
+                If a step has more than one question, these maxima and minima are a total for all the questions in that specific step.
+                All answers must be in complete sentences unless indicated.
+
+
+            </p>
+        </div>
+    </div>
+</main>
+
 </body>
+<footer>
+    <div class="flex flex-wrap text-sm pl-6 ml-6 text-base
+                border-l border-gray-400 grow ">
+        <p class="m-auto">
+            © Copyright 2023 sdthinlay, all rights reserved.
+        </p>
+    </div>
+</footer>
+<script src="./assets/js/script.js"></script>
 </html>
