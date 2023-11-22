@@ -2,9 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>SAMPLE PROJECT</title>
+    <link rel="stylesheet" href="./assets/css/site.css">
 </head>
 <body>
-
+    <header class="sticky top-0 flex justify-between p-6 mx-auto md:flex-row gap-4 bg-froly text-gray-200">
+        <a class="flex items-center mb-4 font-medium title-font md:mb-0 gap-2">
+            <h1 class="text-sm">My Portfolio </h1>
+        </a>
+        <div class="md:hidden fixed top-6 right-6 z-50">
+            <button id="menu-toggle" class="text-gray-200 focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <nav class="md:flex hidden">
+            <ul class="flex flex-col md:flex-row md:items-center md:space-x-4 text-base md:ml-auto">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="mywork.html">Sample Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <div class="w-full md:w-full flex flex-col gap-4 p-4">
+        <div class="w-full md:max-w-full bg-pancho text-gray-200 p-4 -m-4 mb-0 font-semibold flex flex-col gap-4">
+            <header>
+                My Sample Project
+            </header>
+        </div>
+        <div class="w-full bg-Pancho md:bg-Pancho border border-gray-500 flex flex-row gap-3.5 p-8">
+            <form id="jokeForm" class="flex flex-col md:flex-row md:items-center md:space-x-4">
+                <p>Given below is a sample project where one can enter the number of jokes they want, and it is displayed.</p>
+                <p>
+                    <label for="numberOfJokes" class="w-full md:max-w-full p-4 flex flex-col">
+                        Number of Jokes:
+                    </label>
+                </p>
+                <p>
+                    <input type="number" id="numberOfJokes" name="numberOfJokes" class="w-full md:w-auto p-2 border
+                    border-gray-500 flex flex-col">
+                </p>
+                <p>
+                    <button type="submit" id="getJokesButton" class="bg-gray-500 text-gray-100
+                            p-4 py-2 hover:bg-gray-800 hover:text-Wax Flower border transition ease-in-out duration-500">
+                            Get Jokes
+                    </button>
+                </p>
+            </form>
+            <div id="jokeResponse"></div>
+        </div>
+    </div>
+</main>
 </body>
+<footer>
+    <div class="flex flex-wrap text-sm pl-6 ml-6 text-base
+                border-l border-gray-400 grow ">
+        <p class="m-auto">
+            © Copyright 2023 sdthinlay, all rights reserved.
+        </p>
+    </div>
+</footer>
+<script src="./assets/js/sample_project.js"></script>
 </html>
