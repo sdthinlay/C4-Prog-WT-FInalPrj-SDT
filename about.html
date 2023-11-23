@@ -2,9 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title><!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <title>About</title>
+    <link rel="stylesheet" href="./assets/css/site.css">
 </head>
 <body>
+<header class="sticky top-0 flex justify-between p-6 mx-auto md:flex-row gap-4 bg-froly text-gray-200">
+    <a class="flex items-center mb-4 font-medium title-font md:mb-0 gap-2">
+        <h1 class="text-sm">My Portfolio </h1>
+    </a>
+    <div class="md:hidden fixed top-6 right-6 z-50">
+        <button id="menu-toggle" class="text-gray-200 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+    <nav class="md:flex hidden">
+        <ul class="flex flex-col md:flex-row md:items-center md:space-x-4 text-base md:ml-auto">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="mywork.html">Sample Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="w-full md: flex flex-col gap-4 p-4 font-serif">
+        <div class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0 font-sans font-extrabold">
+            <h4 class="text-bold text-4xl">ABOUT ME</h4>
+        </div>
+        <div class="-m-4 mb-2 max-h-full md:max-h-full col-span-2">
+            <img src="./assets/img/bts.jpg" alt="pic of bts" width="30%">
+        </div>
+        <div class="flex flex-col gap-4 font-serif bg-gray-200">
+            <p>Born and brought up in Bhutan, I did my entire schooling in my home country.I was fortunate enough to
+                receive my free education in one of the well reputed schools in the country. I specialized in Science
+                stream in my high school days by studying subjects like Biology, Physics, Mathematics, Chemistry, English
+                and my national language Dzongkha. After high school, I interned as teacher in Druk School where I was
+                responsible for teaching Physics and Maths. After that I also interned in a private IT firm to gain my
+                experience to work in the industry. I applied for a two-year course in North Metropolitan TAFE in
+                Information Technology specializing in Programming to gain practical skills in software language. </p>
+            <p class="font-semibold">
+                My Skills
+            </p>
+            <p>
+                * Web Design like HTML and CSS
+            </p>
+            <p>
+                * Programming Languages like Python, C# and JavaScript
+            </p>
+            <p>
+                * Query language like SQL
+            </p>
+            <p>
+                * Version Control platforms like GitHub
+            </p>
+            <p>
+                * Programming tools like Visual Studio Code, Pycharm and Webstorm
+            </p>
+            <p>
+                * APIs like NASA API and Ninja API
+            </p>
+            <p>
+                * Mobile Development using MAUI Visual Studio.
+            </p>
+            <p>
+                * Soft skills like communication, teamwork and problem-solving
+            </p>
+
+        </div>
+    </div>
+</main>
 
 </body>
+<footer>
+    <div class="flex flex-wrap text-sm pl-6 ml-6 text-base
+                border-l border-gray-400 grow ">
+        <p class="m-auto">
+            © Copyright 2023 sdthinlay, all rights reserved.
+        </p>
+    </div>
+</footer>
+<script src="./assets/js/script.js"></script>
 </html>
