@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="./assets/css/site.css">
+
+</head>
+<body>
+<header class="sticky top-0 flex justify-between p-6 mx-auto md:flex-row gap-4 bg-froly text-gray-200">
+    <a class="flex items-center mb-4 font-medium title-font md:mb-0 gap-2">
+        <h1 class="text-sm">My Portfolio </h1>
+    </a>
+    <div class="md:hidden fixed top-6 right-6 z-50">
+        <button id="menu-toggle" class="text-gray-200 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+    <nav class="md:flex hidden">
+        <ul class="flex flex-col md:flex-row md:space-x-4 text-base md:ml-auto">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="mywork.html">Sample Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div>
+        <div class="text-center font-serif text-black border-gray-400 border-2 md: bg-Pastel Pink text-2xl pl-25 pr-24 ml-28 mr-28 pb-2.5 pt-1 ">
+            <p>Get in touch with me</p>
+        </div>
+        <p class=" text-gray-800 focus:outline-none text-xl ml-2 mr-2 md:mt-4 mt-2">Email me</p>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block mr-2 ml-2" height="2em" width="2em" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0
+            112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1
+            19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7
+            64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+        <span class="inline-block mr-2 ml-2">20095373@tafe.wa.edu.au or sdthinlay@gmail.com</span>
+
+        <p class=" text-gray-800 focus:outline-none text-xl ml-2 mr-2 md:mt-4 mt-2">Call me</p>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block mr-2 ml-2" height="2em" width="2em" viewBox="0 0 512
+         512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18
+         0 33.8-12 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7
+        177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+        <span class="inline-block mr-2 ml-2">+61 0452 379 087</span>
+
+        <p class=" text-gray-800 focus:outline-none text-xl ml-2 mr-2 md:mt-4 mt-2">Address</p>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block mr-2 ml-2" height="2em" width="2em"
+             viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0
+             87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+        <span class="inline-block mr-2 ml-2">Mount hawthorn, Perth Western Australia</span>
+
+        <div class="md:text-gray-800 text-gray-800 md:ml-15 mr-10 mt-8 pb-2.5 pt-1 bg-Wax Flower">
+            <p class="border-2 mr-20 ml-28 text-2xl text-center font-serif">
+                Send me a message
+            </p>
+            <form action="#" method="post" id="contactForm" onsubmit="return validateForm()">
+                <div class="mt-2 mb-4">
+                    <label for="name">Your Name:</label>
+                    <input class="bg-gray-200 mr-3 ml-6 px-2 py-1" type="text" id="name" maxlength="20" name="name" required>
+                </div>
+                <div class="mt-2 mb-4">
+                    <label for="email">Your Email:</label>
+                    <input class="bg-gray-200 mr-3 ml-7 px-2 py-1" type="email" id="email" name="email" required>
+                </div>
+                <div class="mt-4 mb-4">
+                    <label class="align-middle" for="message">Your Message:</label>
+                    <textarea class="bg-gray-200 px-2 py-1" id="message" name="message" rows="6" cols="80"
+                              required></textarea>
+                </div>
+
+                <button class="border-2 border-black px-5 py-2 mr-12 ml-80 bg-Pancho" type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</main>
+</body>
+<footer>
+    <div class="sticky flex flex-wrap text-sm pl-6 ml-6 grow mt-auto">
+        <p class="m-auto">
+            © Copyright 2023 sdthinlay, all rights reserved.
+        </p>
+    </div>
+</footer>
+<script src="./assets/js/script.js"></script>
+<script src="./assets/js/message.js"></script>
+</html>
