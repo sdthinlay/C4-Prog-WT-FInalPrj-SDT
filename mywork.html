@@ -31,27 +31,27 @@
     </nav>
 </header>
 <main>
-    <div class="w-full md:w-full flex flex-col gap-4 p-4">
-        <div class="w-full md:max-w-full bg-pancho text-gray-200 p-4 -m-4 mb-0 font-semibold flex flex-col gap-4">
-            <header>
+    <div class="w-full md:w-full flex flex-col gap-4 p-4 mb-40">
+        <div class="w-full md:max-w-full bg-Wax-Flower text-gray-200 font-semibold pt-4 pb-4 flex flex-col gap-4">
+            <header class="pr-2">
                 My Sample Project
             </header>
         </div>
-        <div class="w-full bg-Pancho md:bg-Pancho border border-gray-500 flex flex-row gap-3.5 p-8">
-            <form id="jokeForm" class="flex flex-col md:flex-row md:items-center md:space-x-4">
+        <div class="bg-Pancho flex-row md:bg-Pancho border border-gray-500 flex flex-col gap-2">
+            <form id="jokeForm" class="flex flex-col space-x-0.5 md:flex flex-col md:items-center space-x-4">
                 <p>Given below is a sample project where one can enter the number of jokes they want, and it is displayed.</p>
                 <p>
-                    <label for="numberOfJokes" class="w-full md:max-w-full p-4 flex flex-col">
+                    <label for="numberOfJokes" class="w-full md:max-w-full p-4 flex flex-row ml-4">
                         Number of Jokes:
+
                     </label>
                 </p>
+                <input type="number" id="numberOfJokes" name="numberOfJokes" class="w-1/4 pl-10 md:w-auto ml-28 pl-16 border
+                mb-6 border-gray-500 flex flex-row">
                 <p>
-                    <input type="number" id="numberOfJokes" name="numberOfJokes" class="w-full md:w-auto p-2 border
-                    border-gray-500 flex flex-col">
-                </p>
-                <p>
-                    <button type="submit" id="getJokesButton" class="bg-gray-500 text-gray-100
-                            p-4 py-2 hover:bg-gray-800 hover:text-Wax Flower border transition ease-in-out duration-500">
+                    <button type="submit" id="getJokesButton" class="bg-Wax-Flower pr-40 text-gray-100
+            p-4 py-2 hover:bg-gray-800 md: border transition ease-in-out
+            duration-500 mb-18 flex flex-row ">
                         Get Jokes
                     </button>
                 </p>
@@ -62,7 +62,7 @@
 </main>
 </body>
 <footer>
-    <div class="sticky bg-Pastel-Pink flex flex-wrap text-sm grow mt-auto">
+    <div class="sticky bg-Pastel-Pink flex flex-wrap text-sm grow mt-96">
         <p class="m-auto">
             © Copyright 2023 sdthinlay, all rights reserved.
         </p>
