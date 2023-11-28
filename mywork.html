@@ -5,7 +5,7 @@
     <title>SAMPLE PROJECT</title>
     <link rel="stylesheet" href="./assets/css/site.css">
 </head>
-<body>
+<body >
 <header class="sticky top-0 flex justify-between p-6 mx-auto md:flex-row gap-4 bg-froly text-gray-200">
     <a class="flex items-center mb-4 font-medium title-font md:mb-0 gap-2">
         <h1 class="text-sm">My Portfolio </h1>
@@ -30,16 +30,18 @@
         </ul>
     </nav>
 </header>
-<main>
-    <div class="w-full md:w-full flex flex-col gap-4 p-4 mb-40">
-        <div class="w-full md:max-w-full bg-Wax-Flower text-gray-200 font-semibold pt-4 pb-4 flex flex-col gap-4">
+<main class="h-screen">
+    <div class="w-full md:w-full flex flex-col p-4 mb-40">
+        <div class="w-full md:max-w-full bg-Wax-Flower text-black font-semibold pt-4 pb-4 flex flex-col gap-4 justify-center items-center">
             <header class="pr-2">
                 My Sample Project
             </header>
         </div>
         <div class="bg-Pancho flex-row md:bg-Pancho border border-gray-500 flex flex-col gap-2">
-            <form id="jokeForm" class="flex flex-col space-x-0.5 md:flex flex-col md:items-center space-x-4">
-                <p>Given below is a sample project where one can enter the number of jokes they want, and it is displayed.</p>
+            <form id="jokeForm" class="flex flex-col space-x-0.5 md:flex flex-col md:items-center space-x-4 items-center p-4">
+                <p>Given below is a sample project where users can enter the number of jokes they want, and the jokes get displayed.
+                    This project calls API from NinjaAPI to get the jokes and JavaScripts to handle everything.
+                </p>
                 <p>
                     <label for="numberOfJokes" class="w-full md:max-w-full p-4 flex flex-row ml-4">
                         Number of Jokes:
@@ -51,7 +53,7 @@
                 <p>
                     <button type="submit" id="getJokesButton" class="bg-Wax-Flower pr-40 text-gray-100
             p-4 py-2 hover:bg-gray-800 md: border transition ease-in-out
-            duration-500 mb-18 flex flex-row ">
+            duration-500">
                         Get Jokes
                     </button>
                 </p>
@@ -60,14 +62,24 @@
         </div>
     </div>
 </main>
-</body>
-<footer>
-    <div class="sticky bg-Pastel-Pink flex flex-wrap text-sm grow mt-96">
-        <p class="m-auto">
+<footer class="sticky bottom-0">
+    <div class="sticky bottom-0 bg-Pastel-Pink grid grid-cols-2 p-4 ">
+        <p class=" order-1">
             © Copyright 2023 sdthinlay, all rights reserved.
         </p>
+        <nav class="md:flex hidden order-2 ">
+            <ul class="flex flex-col md:flex-row items-center md:space-x-4 md:text-center md:ml-auto">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="mywork.html">Sample Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </div>
 </footer>
+</body>
 <script src="./assets/js/script.js"></script>
 <script src="./assets/js/sample_project.js"></script>
 </html>

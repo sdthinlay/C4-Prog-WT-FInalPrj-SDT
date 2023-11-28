@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="assets/css/site.css">
 </head>
-<body>
+<body class="h-screen">
 <header class="sticky top-0 flex justify-between p-6 mx-auto md:flex-row gap-4 bg-froly text-gray-200">
     <a class="flex items-center mb-4 font-medium title-font md:mb-0 gap-2">
         <h1 class="text-sm">My Portfolio </h1>
@@ -31,7 +31,7 @@
         </ul>
     </nav>
 </header>
-<main>
+<main >
     <div class="w-full bg-Pancho md:bg-Pancho flex flex-row gap-3.5 p-8">
         <div class="text-gray-800 p-6 -m-6 mb-6">
             <h4 class="text-bold text-xl">Sangay Dema Thinley</h4>
@@ -121,15 +121,23 @@
 
     </div>
 </main>
-
-</body>
-<footer>
-    <div class="sticky bg-Pastel-Pink flex flex-wrap text-sm grow mt-auto">
+<footer class="sticky bottom-0">
+    <div class="sticky bottom-0 bg-Pastel-Pink flex flex-wrap text-sm grow mt-96 p-4">
         <p class="m-auto">
             © Copyright 2023 sdthinlay, all rights reserved.
         </p>
+        <nav class="md:flex hidden">
+            <ul class="flex flex-col md:flex-row md:items-center md:space-x-4 text-base md:ml-auto">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="mywork.html">Sample Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </div>
 </footer>
-<script src="./assets/js/script.js">
-</script>
+</body>
+<script src="./assets/js/script.js"></script>
 </html>

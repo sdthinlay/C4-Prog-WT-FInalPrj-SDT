@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/css/site.css">
 
 </head>
-<body>
+<body class="h-screen">
 <header class="sticky top-0 flex justify-between p-6 mx-auto md:flex-row gap-4 bg-froly text-gray-200">
     <a class="flex items-center mb-4 font-medium title-font md:mb-0 gap-2">
         <h1 class="text-sm">My Portfolio </h1>
@@ -32,27 +32,36 @@
         </ul>
     </nav>
 </header>
-<main>
-    <div class="w-full text-center md:w-full pl-2 pr-2 flex flex-row gap-2 ">
-        <div class="text-gray-800 p-4 -m-4 mb-0 mt-2.5 md: w-3/4 flex flex-col">
-            <h4 class="text-2xl font-extrabold">Hello, I am Sangay Thinley</h4>
-            <p class="mt-4 mb-4 text-xl">Certificate IV in IT(Programming)</p>
-            <p class="mt-4 mb-4 text-xl">Python, C#, SQL, Web Technology</p>
-        </div>
-        <div class="w-ful m-auto mt-2.5 mb-6 md: max-h-full content-center">
-            <img src="./assets/img/pic2.jpeg" alt="pic of bts" width="100%">
-        </div>
-
+<main class="md:grid md:grid-cols-3">
+    <div class="w-full text-center grid grid-row-2 md:w-full md:order-2 items-center justify-center md:pr-8 p-8" style="grid-column: span 2;">
+        <img src="./assets/img/pic2.jpeg" alt="pic of bts">
     </div>
-</main>
+    <div class="justify-center text-gray-800 flex flex-col md:order-1 items-center pt-4">
+        <h4 class="text-2xl font-extrabold">Hello, I am Sangay Thinley</h4>
+        <br>
+        <p class="mt-4 mb-4 text-xl">Certificate IV in IT(Programming)</p>
+        <br>
+        <p class="mt-4 mb-4 text-xl">Python, C#, SQL, Web Technology</p>
+    </div>
 
-</body>
-<footer>
-    <div class="sticky bg-Pastel-Pink flex flex-wrap text-sm grow mt-auto">
+</main>
+<footer class="sticky bottom-0">
+    <div class="sticky bottom-0 bg-Pastel-Pink flex flex-wrap text-sm grow mt-96 p-4">
         <p class="m-auto">
             © Copyright 2023 sdthinlay, all rights reserved.
         </p>
+        <nav class="md:flex hidden">
+            <ul class="flex flex-col md:flex-row md:items-center md:space-x-4 text-base md:ml-auto">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="mywork.html">Sample Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </div>
 </footer>
+</body>
 <script src="./assets/js/script.js"></script>
 </html>
