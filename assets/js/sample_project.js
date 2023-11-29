@@ -2,10 +2,8 @@ const getJokesButton = document.getElementById('getJokesButton');
 
 getJokesButton.addEventListener('click', function (event)  {
     event.preventDefault();
-    const numberOfJokes = document.getElementById('numberOfJokes').value;
+    let numberOfJokes = document.getElementById('numberOfJokes').value;
     const apiUrl = 'https://api.api-ninjas.com/v1/jokes?limit=' + numberOfJokes;
-
-
 
     fetch(apiUrl, {
         method: 'GET',
