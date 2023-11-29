@@ -12,7 +12,7 @@
     <a class="flex items-center mb-4 font-medium title-font md:mb-0 gap-2">
         <h1 class="text-2xl font-serif">My Portfolio </h1>
     </a>
-    <div class="md:hidden fixed top-6 right-6 z-50">
+    <section class="md:hidden fixed top-6 right-6 z-50">
         <button id="menu-toggle" class="text-gray-200 focus:outline-none">
             <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                  xmlns="http://www.w3.org/2000/svg">
@@ -20,7 +20,7 @@
                       d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
         </button>
-    </div>
+    </section>
     <nav class="md:flex hidden">
         <ul class="flex flex-col md:flex-row md:items-center md:space-x-4 text-base md:ml-auto">
             <li><a href="index.html">Home</a></li>
@@ -33,13 +33,13 @@
     </nav>
 </header>
 <main class="h-screen">
-    <div class="w-full md:w-full flex flex-col p-4 mb-40">
-        <div class="w-full md:max-w-full bg-Wax-Flower text-black font-semibold pt-4 pb-4 flex flex-col gap-4 justify-center items-center">
+    <article class="w-full md:w-full flex flex-col p-4 mb-40">
+        <section class="w-full md:max-w-full bg-Wax-Flower text-black font-semibold pt-4 pb-4 flex flex-col gap-4 justify-center items-center">
             <header class="pr-2">
                 My Sample Project
             </header>
-        </div>
-        <div class="bg-Pancho flex-row md:bg-Pancho border border-gray-500 flex flex-col gap-2">
+        </section>
+        <section class="bg-Pancho flex-row md:bg-Pancho border border-gray-500 flex flex-col gap-2">
             <form id="jokeForm" class="flex flex-col space-x-0.5 md:flex flex-col md:items-center space-x-4 items-center p-4">
                 <p>Given below is a sample project where users can enter the number of jokes they want, and the jokes get displayed.
                     This project calls API from NinjaAPI to get the jokes and JavaScripts to handle everything.
@@ -60,12 +60,12 @@
                     </button>
                 </p>
             </form>
-            <div id="jokeResponse"></div>
-        </div>
-    </div>
+            <section id="jokeResponse"></section>
+        </section>
+    </article>
 </main>
 <footer class="sticky bottom-0">
-    <div class="sticky bottom-0 bg-Pastel-Pink grid grid-cols-2 p-4 ">
+    <section class="sticky bottom-0 bg-Pastel-Pink grid grid-cols-2 p-4 ">
         <p class=" order-1">
             © Copyright 2023 sdthinlay, all rights reserved.
         </p>
@@ -79,7 +79,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </div>
+    </section>
 </footer>
 </body>
 <script src="./assets/js/script.js"></script>
