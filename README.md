@@ -1,3 +1,33 @@
+# Personal Portfolio
+
+## Home
+
+## About Me
+
+## Contact
+
+- **Email:**
+- **Address:**
+- **Phone:**
+
+## Resume
+
+## My Sample Project
+
+## Projects
+
+
+
+
+
+
+
+
+
+
+
+
+
 | Name        | RGB           | HEX     |
 |-------------|---------------|---------|
 | Fro ly      | 240, 124, 138 | #f07c8a |
