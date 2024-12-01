@@ -1,87 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SAMPLE PROJECT</title>
-    <link rel="stylesheet" href="./assets/css/site.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body >
-<header class="sticky top-0 flex justify-between p-6 mx-auto md:flex-row gap-4 bg-froly text-gray-200">
-    <a class="flex items-center mb-4 font-medium title-font md:mb-0 gap-2">
-        <h1 class="text-2xl font-serif">My Portfolio </h1>
-    </a>
-    <section class="md:hidden fixed top-6 right-6 z-50">
-        <button id="menu-toggle" class="text-gray-200 focus:outline-none">
-            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-        </button>
-    </section>
-    <nav class="md:flex hidden">
-        <ul class="flex flex-col md:flex-row md:items-center md:space-x-4 text-base md:ml-auto">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="mywork.html">Sample Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<main class="h-screen">
-    <article class="w-full md:w-full flex flex-col p-4 mb-40">
-        <section class="w-full md:max-w-full bg-Wax-Flower text-black font-semibold pt-4 pb-4 flex flex-col gap-4 justify-center items-center">
-            <header class="pr-2">
-                My Sample Project
-            </header>
-        </section>
-        <section class="bg-Pancho flex-row md:bg-Pancho border border-gray-500 flex flex-col gap-2">
-            <form id="jokeForm" class="flex flex-col space-x-0.5 md:flex flex-col md:items-center space-x-4 items-center p-4">
-                <p>Given below is a sample project where users can enter the number of jokes they want, and the jokes get displayed.
-                    This project calls API from NinjaAPI to get the jokes and JavaScripts to handle everything.
-                </p>
-                <p>
-                    <label for="numberOfJokes" class="w-full md:max-w-full p-4 flex flex-row ml-4">
-                        Number of Jokes:
 
-                    </label>
-                </p>
-                <input type="number" id="numberOfJokes" name="numberOfJokes" class="w-1/4 pl-10 md:w-auto ml-28 pl-16 border
-                mb-6 border-gray-500 flex flex-row">
-                <p>
-                    <button type="submit" id="getJokesButton" class="bg-Wax-Flower pr-40 text-gray-100
-            p-4 py-2 hover:bg-gray-800 md: border transition ease-in-out
-            duration-500">
-                        Get Jokes
-                    </button>
-                </p>
-            </form>
-            <section id="jokeResponse"></section>
-        </section>
-    </article>
-</main>
-<footer class="sticky bottom-0">
-    <section class="sticky bottom-0 bg-Pastel-Pink grid grid-cols-2 p-4 ">
-        <p class=" order-1">
-            © Copyright 2023 sdthinlay, all rights reserved.
-        </p>
-        <nav class="md:flex hidden order-2 ">
-            <ul class="flex flex-col md:flex-row items-center md:space-x-4 md:text-center md:ml-auto">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="mywork.html">Sample Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+<body>
+<header padding: 16px; color: #332b2b;">
+<a href="index.html"><h1 style="text-align: -moz-right;">sdthinlay</h1></a>
+</header>
+<h1>Projects</h1>
+<main>
+    <!-- Add multiple sections to create scrollable content -->
+    <section id="intro">
+        <h2>Shire of Chittering Flutter Mobile Application</h2>
+        <img src="assets/img/HomePage.png">
+        <img src="assets/img/NewsPage.png">
+
     </section>
+
+    <section>
+        <h2>REST API</h2>
+
+    </section>
+
+    <section>
+        <h2>Xplorers Mobile Application</h2>
+
+    </section>
+
+    <section>
+        <h2>Workopia Laravel</h2>
+
+    </section>
+
+    <section>
+        <h2>TODO Flutter Application</h2>
+
+    </section>
+</main>
+
+<footer #e8c1c1; text-align: center; padding: 16px; color: #ffffff;">
+<p>© 2024 My Portfolio. All Rights Reserved.</p>
 </footer>
 </body>
-<script src="./assets/js/script.js"></script>
-<script src="./assets/js/sample_project.js"></script>
+
 </html>

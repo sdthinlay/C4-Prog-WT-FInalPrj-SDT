@@ -1,3 +1,68 @@
-.main-header{
-    font-size: 40px;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensures full height for scrolling */
+    overflow-y: auto; /* Enables vertical scrolling */
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Adds smooth scrolling effect */
+    height: 100%;
 }
+
+body {
+    font-family: HYMyeongJo-Extra;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(218, 172, 228, 0.75);
+
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #d7b6ef;
+    border-radius: 8px;
+    box-shadow: #b0b8c5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+main {
+    flex: 1; /* Allows main content to take up available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+/* Optional Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+}
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#intro p {
+    flex: 1;
+    padding-right: 20px;
+}
+
+#intro img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+h1 {
+    padding: 20px;
+}
+
